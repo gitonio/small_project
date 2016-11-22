@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SmallContract - B9 lab Small Project</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>SmallContract</h1>
+  <h2>B9 lab Small Project</h2>
+  <div class="solid">
+  <h3>Contract <span class="black"><span id="balance"></span> ether</span></h3>
+  <h3>Account A <span class="black"><span id="balanceA"></span> ether</span></h3>
+  <h3>Account B <span class="black"><span id="balanceB"></span> ether</span></h3>
+  </div>
+  <br>
+  <div class="solid">
+  <br><label for="AccountA">Address A:</label><input type="text" size="32" id="AccountA" placeholder="e.g., 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"></input>
+  <br><label for="AccountB">Address B:</label><input type="text" size="32" id="AccountB" placeholder="e.g., 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"></input>
+  <br><br><button id="setAddress" onclick="setAddress()">Set Address</button><br>
+  </div>
+  <br>
+  <div class="solid">
+  <br><label for="amount">Amount:</label><input type="text" id="amount" placeholder="e.g., 95"></input>wei
+  <br>  <button id="send" onclick="sendToSmallContract()">Send</button>
+  </div>
+  <br>
+  <span id="status"></span>
+</body>
+</html>
